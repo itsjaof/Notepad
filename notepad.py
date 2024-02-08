@@ -73,6 +73,9 @@ def process_option():
     else:
         return exit()
 
+if not os.path.exists('notepad_data'):
+    os.mkdir('notepad_data')
+
 home_screen()
 
 OPTION = get_user_input('Select an opion: ')
